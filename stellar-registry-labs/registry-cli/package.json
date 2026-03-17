@@ -1,0 +1,28 @@
+{
+  "name": "@stellar-registry-labs/registry-cli",
+  "version": "0.1.0",
+  "description": "CLI tool to register, search and manage contracts in the Soroban Contract Registry",
+  "main": "src/index.js",
+  "bin": {
+    "registry": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^12.0.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ora": "^8.0.1",
+    "table": "^6.8.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["stellar", "soroban", "smart-contracts", "registry", "cli"],
+  "license": "MIT"
+}
