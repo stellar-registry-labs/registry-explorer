@@ -13,6 +13,26 @@
 
 ## How to Contribute
 
-1. Fork and `cargo test`
-2. Make changes with tests
-3. Open a PR
+### Prerequisites
+- [Rust](https://www.rust-lang.org/tools/install)
+- [Soroban CLI](https://soroban.stellar.org/docs/getting-started/setup): `cargo install --locked soroban-cli`
+
+### Local Setup
+
+```bash
+git clone https://github.com/<your-fork>/stellar-registry-labs.git
+cd stellar-registry-labs/verifier-contract
+cargo build --release --target wasm32-unknown-unknown
+cargo test
+```
+
+### Submitting a PR
+
+```bash
+git checkout -b feat/your-feature
+# make your changes with tests
+cargo test
+git push origin feat/your-feature
+```
+
+Open a Pull Request against `main` with a description of what changed.

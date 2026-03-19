@@ -17,11 +17,29 @@ Label your picked issue with `stellar-wave` to participate in rewards.
 
 ## How to Contribute
 
-1. Fork this repo
-2. Create a branch: `git checkout -b feat/your-feature`
-3. Write your code with tests
-4. Run `cargo test` — all tests must pass
-5. Open a Pull Request with a clear description
+### Prerequisites
+- [Rust](https://www.rust-lang.org/tools/install)
+- [Soroban CLI](https://soroban.stellar.org/docs/getting-started/setup): `cargo install --locked soroban-cli`
+
+### Local Setup
+
+```bash
+git clone https://github.com/<your-fork>/stellar-registry-labs.git
+cd stellar-registry-labs/registry-contract
+cargo build --release --target wasm32-unknown-unknown
+cargo test
+```
+
+### Submitting a PR
+
+```bash
+git checkout -b feat/your-feature
+# make your changes with tests
+cargo test
+git push origin feat/your-feature
+```
+
+Then open a Pull Request against `main` with a clear description of what changed.
 
 ## Code Style
 

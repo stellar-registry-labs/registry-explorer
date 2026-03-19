@@ -13,7 +13,29 @@
 
 ## How to Contribute
 
-1. Fork and `npm install`
-2. `npm run dev` to start locally
-3. Make your changes
-4. Open a PR — include a screenshot for UI changes
+### Prerequisites
+- Node.js v18+
+- npm
+
+### Local Setup
+
+```bash
+git clone https://github.com/<your-fork>/stellar-registry-labs.git
+cd stellar-registry-labs/registry-explorer
+npm install
+cp .env.example .env
+# Add VITE_REGISTRY_CONTRACT_ID to .env
+npm run dev
+```
+
+Open http://localhost:5173
+
+### Submitting a PR
+
+```bash
+git checkout -b feat/your-feature
+# make your changes
+git push origin feat/your-feature
+```
+
+Open a Pull Request against `main`. Include a screenshot for any UI changes.
