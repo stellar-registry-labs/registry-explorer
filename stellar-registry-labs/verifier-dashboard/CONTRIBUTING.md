@@ -13,7 +13,26 @@
 
 ## How to Contribute
 
-1. Fork and `npm install`
-2. `npm run dev`
-3. Make your changes
-4. Open a PR with a screenshot
+### Prerequisites
+- Node.js v18+
+- npm
+
+### Local Setup
+
+```bash
+git clone https://github.com/<your-fork>/stellar-registry-labs.git
+cd stellar-registry-labs/verifier-dashboard
+npm install
+cp .env.example .env
+npm run dev
+```
+
+### Submitting a PR
+
+```bash
+git checkout -b feat/your-feature
+# make your changes
+git push origin feat/your-feature
+```
+
+Open a Pull Request against `main`. Include a screenshot for UI changes.
